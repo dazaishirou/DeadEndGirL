@@ -1,0 +1,234 @@
+/* --- BASICS ------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.05rem;
+  background-color: #000000;
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+}
+
+::selection {
+  background: rgba(102, 226, 219, 0.4);
+  visibility: hidden;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background: #0e0591;
+  background-attachment: fixed;
+  font: 1rem "PT Sans", sans-serif;
+  line-height: 1.4rem;
+  color: #66E2DB;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 0.025rem;
+}
+
+/* --- CONTAINERS SETUP --------------------------- */
+.flex-container-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  clip-path: polygon(6% 2%, 96% 1%, 89% 100%, 0% 94%);
+  position: relative;
+  margin: 1rem 0.5rem;
+  width: 80vw;
+  max-width: 69rem;
+  /* nice */
+  height: 34rem;
+  box-shadow: 0.05rem 0.05rem 0.5rem rgba(0, 0, 0, 0.5);
+  background: #fff;
+  display: flex;
+}
+
+.flex-body {
+  background-color: rgba(170, 170, 170, 0);
+  padding: 3rem;
+  overflow-y: scroll;
+  width: 100%;
+  padding-left: 22rem;
+  padding-right: 6rem;
+  position: relative;
+  z-index: -1;
+}
+
+.flex-image {
+  width: 22rem;
+  position: absolute;
+  /* don't @ me */
+  clip-path: polygon(0 0%, 100% 0%, 66% 100%, 0% 100%);
+}
+.flex-image img {
+  width: 180%;
+  margin-left: -8rem;
+  margin-top: -2rem;
+  overflow: hidden;
+}
+
+/* STYLING */
+.rose-background {
+  background: #66E2DB;
+  background-image: url("https://i.ibb.co/n6L8HrT/desktop-wallpaper-light-blue-roses-blue-rose.jpg");
+  background-attachment: fixed;
+  background-position-x: -42rem;
+  text-shadow: 0.1rem 0.1rem 0 #000, 0.2rem 0.2rem 0 #66E2DB;
+}
+
+h1 {
+  background: #66E2DB;
+  padding: 2rem 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: #fff;
+  text-shadow: 0 0.1rem 1px rgba(0, 0, 0, 0.5);
+  clip-path: polygon(3% 5%, 96% 0%, 94% 100%, 2% 90%);
+}
+
+h1.name {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  clip-path: polygon(3% 6%, 97% 1%, 100% 100%, 4% 96%);
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  padding: 0.001rem 0;
+  /* lmao */
+  line-height: 6rem;
+  text-shadow: 0.2rem 0.2rem 0 #000, 0.5rem 0.5rem 0 #66E2DB;
+}
+
+h1 p {
+  transform: rotate(1deg) !important;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 1.5rem 2rem;
+  padding-bottom: 1.4rem;
+  color: #fff;
+  background-color: #66E2DB;
+  background-attachment: fixed;
+  text-shadow: 0 0.1rem 1px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  clip-path: polygon(2% 2%, 98% 4%, 97% 99%, 5% 100%);
+  margin: 0;
+}
+
+h2 p {
+  transform: rotate(-1deg) !important;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+  color: #66E2DB;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 1.5rem 2rem;
+  padding-bottom: 1.4rem;
+  text-shadow: 0 0.1rem 1px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  font-weight: 900;
+  clip-path: polygon(4% 12%, 94% 2%, 99% 94%, 2% 92%);
+}
+
+h3 p {
+  transform: rotate(1deg) !important;
+  margin: 0;
+}
+h3 p span {
+  color: #fff;
+}
+
+.zodiac {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+.fa-moon,
+.fa-sun,
+.fa-arrow-up {
+  color: #66E2DB;
+  font-size: 1.5em;
+  padding-right: 0.3rem;
+  margin-left: 1.5rem;
+  vertical-align: bottom;
+}
+
+b,
+strong {
+  font-size: 0.9em;
+  letter-spacing: 0.01rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.jpn {
+  font-family: "Kosugi Maru", sans-serif;
+}
+.jpn strong {
+  font-size: 1em;
+  font-weight: 400;
+  padding: 0.2rem;
+  background: #66E2DB;
+  color: #ffffff;
+  border-radius: 0.1rem;
+  text-shadow: 0 0.1rem 1px rgba(0, 0, 0, 0.3);
+}
+
+strong.bg {
+  font-size: 0.8em;
+  font-weight: 900;
+  padding: 0.2rem;
+  letter-spacing: 0.1rem;
+  background: #66E2DB;
+  margin: 0.2rem;
+  color: #ffffff;
+  border-radius: 0.1rem;
+  text-shadow: 0 0.1rem 1px rgba(0, 0, 0, 0.3);
+}
+
+td:nth-child(odd) {
+  padding: 0.2rem 0.6rem;
+  letter-spacing: 0.1rem;
+  background: #66E2DB;
+  color: #ffffff;
+  text-shadow: 0 0.1rem 1px rgba(0, 0, 0, 0.3);
+  font-size: 0.9em;
+  letter-spacing: 0.05rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+table {
+  border-spacing: 1rem;
+}
